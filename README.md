@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [My solution URL](https://github.com/MiloosN5/FrontendMentor_ProductPreviewCardComponent_Challenge)
-- Live Site URL: [My live site URL](https://miloosn5.github.io/FrontendMentor_ProductPreviewCardComponent_Challenge/)
+- Solution URL: [My solution URL](https://github.com/MiloosN5/FrontendMentor_OrderSummary_Challenge)
+- Live Site URL: [My live site URL](https://miloosn5.github.io/FrontendMentor_OrderSummary_Challenge/)
 
 
 ## My process
