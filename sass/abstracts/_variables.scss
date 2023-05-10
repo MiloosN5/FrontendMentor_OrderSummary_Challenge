@@ -104,13 +104,13 @@ $padding: (
     'pi-3px': f.rem(3),
     'pi-10px': f.rem(10),
     'pi-15px': f.rem(15),
-    'pi-15_24px': clamp(f.rem(15), 0rem + 4vw, f.rem(24)),
+    'pi-15_24px': clamp(f.rem(15), 4vw, f.rem(24)),
     'pi-22.5px': f.rem(22.5),
     'pi-26_46px': clamp(f.rem(26), -0.46rem + 8.89vw, f.rem(46)),
     'pb-0': 0,
     'pb-26_40px': clamp(f.rem(26), 0.17rem + 6.22vw, f.rem(40)),
     'pb-15px': f.rem(15),
-    'pb-15_24px': clamp(f.rem(15), 0rem + 4vw, f.rem(24)),
+    'pb-15_24px': clamp(f.rem(15), 4vw, f.rem(24)),
 );
 
 $margin: (
