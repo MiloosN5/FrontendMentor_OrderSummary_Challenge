@@ -1,0 +1,25 @@
+@use 'sass:map';
+@use '../abstracts' as a;
+
+
+.order {
+    &__summary {    
+        &__change { 
+            &__button {
+                button {
+                    span {
+                        &::after {
+                            @extend %displayBlock;
+                            @include a.after('content-empty', 'w-100%', 'mx-none', 'h-2px', 'brigh-blue');
+                            @include a.transition('0.5s', 'ease-in-out');
+                            @include a.margin('mi-0', 'mb-(-11)-0px');
+                        }
+                    }
+                    &:hover span::after {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}

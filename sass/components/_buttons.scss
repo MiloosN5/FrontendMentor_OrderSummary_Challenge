@@ -1,0 +1,28 @@
+@use 'sass:map';
+@use '../abstracts/' as a;
+
+.order {
+    &__summary {
+        &__change { 
+            &__button {
+                button {
+                    @include a.transition('0.5s', 'ease-in-out');
+                    @extend %strippedBtn;
+                }
+            }
+        }
+        &__payment {
+            @include a.container('w-100%', 'mw-none', 'h-auto', 'brigh-blue');
+            @include a.padding('pi-0', 'pb-15px');
+            @include a.margin('mi-0', 'mb-0-22_32px');
+            @include a.border('b-none', 'br-10px');
+            @include a.boxShadow('payment-btn');
+            @include a.transition('0.5s', 'ease-in-out');
+        }
+        &__cancel {
+            @extend %strippedBtn;
+            @include a.margin('mi-0', 'mb-0-6px');
+            @include a.transition('0.5s', 'ease-in-out');
+        }
+    }
+}

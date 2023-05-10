@@ -1,0 +1,64 @@
+@use 'sass:map';
+@use 'variables' as v;
+@use 'functions' as f;
+
+@mixin font($size, $weight, $lineHeight, $color, $align, $letterSpacing) {
+    font-size: map.get(v.$fonts, $size);
+    font-weight: map.get(v.$font-weights, $weight);
+    line-height: map.get(v.$line-heights, $lineHeight);
+    color: map.get(v.$colors, $color);
+    text-align: map.get(v.$text-aligns, $align);
+    letter-spacing: map.get(v.$letter-spacing, $letterSpacing);
+}
+
+@mixin container($width, $max-width, $height, $color) {
+    width: map.get(v.$width, $width);
+    max-width: map.get(v.$width, $max-width);
+    height: map.get(v.$height, $height);
+    background-color: map.get(v.$colors, $color);
+}
+
+@mixin overflow($overflow) {
+    overflow: map.get(v.$overflow, $overflow);
+}
+
+@mixin border($border, $border-radius) {
+    border: map.get(v.$border, $border);
+    border-radius: map.get(v.$border, $border-radius);
+}
+
+@mixin padding($padding-i, $padding-b) {
+    padding-inline: map.get(v.$padding, $padding-i);
+    padding-block: map.get(v.$padding, $padding-b);
+}
+
+@mixin margin($margin-i, $margin-b) {
+    margin-inline: map.get(v.$margin, $margin-i);
+    margin-block: map.get(v.$margin, $margin-b);
+}
+
+@mixin transition($duration, $type) {
+    transition-duration: map.get(v.$transition, $duration);
+    transition-timing-function: map.get(v.$transition, $type);
+}
+
+@mixin boxShadow($boxShadow) {
+    box-shadow: map.get(v.$box-shadow, $boxShadow);
+}
+
+@mixin flexbox($direction, $justify, $align, $wrap, $column-gap, $row-gap) {
+    display: flex;
+    flex-direction: map.get(v.$flex, $direction);
+    justify-content: map.get(v.$flex, $justify);
+    align-items: map.get(v.$flex, $align);
+    flex-wrap: map.get(v.$flex, $wrap);
+    column-gap: map.get(v.$flex, $column-gap);
+    row-gap: map.get(v.$flex, $row-gap);
+}
+
+
+@mixin after($content, $width, $max-width, $height, $color) {
+    content: map.get(v.$after-content, $content);
+    @include container($width, $max-width, $height, $color);
+}
+

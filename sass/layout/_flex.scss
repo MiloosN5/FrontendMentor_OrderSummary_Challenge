@@ -1,0 +1,48 @@
+@use '../abstracts/' as a;
+
+.order {
+    @include a.container('w-100%', 'mw-450px', 'h-auto', 'very-pale-blue');
+    @include a.border('b-none', 'br-20px');
+    @include a.overflow('o-hidden');
+    @include a.boxShadow('order');
+    &__summary {
+        @include a.container('w-auto', 'mw-none', 'h-auto', 'void');
+        @include a.flexbox('fd-column', 'fjc-center', 'fai-center', 'fw-nowrap', 'cg-normal', 'rg-normal');
+        @include a.padding('pi-26_46px', 'pb-26_40px');
+        @include a.border('b-none', 'br-0');
+        &__title {
+            @include a.container('w-auto', 'mw-none', 'h-auto', 'void');
+            @include a.margin('mi-0', 'mb-2-16_14px');
+        }
+        &__description {
+            @include a.container('w-auto', 'mw-none', 'h-auto', 'void');
+            @include a.margin('mi-0', 'mb-0-23px');
+            @include a.padding('pi-10px', 'pb-0');
+        }
+        &__change { 
+            @include a.container('w-100%', 'mw-none', 'h-auto',  'void');
+            @include a.flexbox('fd-row', 'fjc-start', 'fai-center', 'fw-wrap', 'cg-14px', 'rg-normal');
+            @include a.padding('pi-15_24px', 'pb-15_24px');
+            @include a.margin('mi-0', 'mb-0-25_30px');
+            
+            &__icon {
+                @include a.container('w-50px', 'mw-none', 'h-50px', 'void');
+                @include a.flexbox('fd-row', 'fjc-center', 'fai-center', 'fw-nowrap', 'cg-normal', 'rg-normal');
+            }
+            &__plan {
+                @include a.container('w-auto', 'mw-none', 'h-auto',  'void');
+                @include a.flexbox('fd-column', 'fjc-start', 'fai-start', 'fw-nowrap', 'cg-normal', 'rg-normal');
+                @include a.padding('pi-3px', 'pb-0');
+                h2 {
+                    @include a.container('w-auto', 'mw-none', 'h-25px',  'void');
+                }
+                p {
+                    @include a.container('w-auto', 'mw-none', 'h-25px',  'void');
+                }
+            }
+            &__button {
+                @extend %flex-grow1;
+            }
+        }
+    }
+}

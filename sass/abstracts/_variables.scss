@@ -1,0 +1,144 @@
+//Colors
+@use 'functions' as f;
+
+
+$font-family: (
+    'ff-Red_Hat_Display': ('Red Hat Display', sans-serif)
+);
+
+$font-weights: (
+    'fw-medium': 500,
+    'fw-bold': 700,
+    'fw-black': 900
+);
+
+$line-heights: (
+    'lh-1.5-default': 1.5,
+    'lh-24px': f.rem(24),
+    'lh-25px': f.rem(25),
+    'lh-30px': f.rem(30),
+    'lh-33px': f.rem(33)
+);
+
+$letter-spacing: (
+    'ls-normal': normal,
+    'ls-(-0.65px)': -0.65px,
+    'ls-(-0.5px)': -0.5px,
+    'ls-(-0.45px)': -0.45px,
+    'ls-(-0.4px)': -0.4px,
+    'ls-0.15px': 0.15px
+);
+
+$fonts: (
+    'fs-14px': f.rem(14),
+    'fs-15_18px': clamp(f.rem(15), 0.63rem + 1.33vw, f.rem(18)),
+    'fs-16_18px': clamp(f.rem(16), 0.79rem + 0.89vw, f.rem(18)), 
+    'fs-16_17px': clamp(f.rem(16), 0.9rem + 0.44vw, f.rem(17)),
+    'fs-22_28px': clamp(f.rem(22), 0.75rem + 2.67vw, f.rem(28)),
+);
+
+$text-aligns: (
+    'ta-left': left,
+    'ta-center': center,
+    'ta-right': right
+);
+
+$colors: (
+    'white': white,
+    'pale-blue': hsl(225, 100%, 94%),
+    'brigh-blue': hsl(245, 75%, 52%),
+    'very-pale-blue': hsl(225, 100%, 98%),
+    'desaturated-blue': hsl(224, 23%, 55%),
+    'dark-blue': hsl(223, 47%, 23%),
+    'void': rgba(255,255,255,0)
+);
+
+$flex: (
+    'fd-row': row,
+    'fd-column': column,
+    'fjc-start': start,
+    'fjc-center': center,
+    'fai-start': center,
+    'fai-center': center,
+    'fw-nowrap': nowrap,
+    'fw-wrap': wrap,
+    'fg-0': 0,
+    'fg-1': 1,
+    'cg-normal': normal,
+    'cg-14px': 14px,
+    'rg-normal': normal
+);
+
+$width: (
+    'w-auto': auto,
+    'w-25px': f.rem(25),
+    'w-50px': f.rem(50),
+    'w-100%': 100%,
+    'mw-auto': none,
+    'mw-450px': f.rem(450),
+    'mw-100%': 100%
+);
+
+$height: (
+    'h-auto': auto,
+    'h-2px': f.rem(2),
+    'h-25px': f.rem(25),
+    'h-50px': f.rem(50),
+);
+
+$overflow: (
+    'o-auto': auto,
+    'o-hidden': hidden,
+);
+
+$border: (
+    'b-none': none,
+    'br-0': 0,
+    'br-10px': f.rem(10),
+    'br-20px': f.rem(20),
+
+);
+
+$padding: (
+    'pi-0': 0,
+    'pi-3px': f.rem(3),
+    'pi-10px': f.rem(10),
+    'pi-15px': f.rem(15),
+    'pi-15_24px': clamp(f.rem(15), 0rem + 4vw, f.rem(24)),
+    'pi-22.5px': f.rem(22.5),
+    'pi-26_46px': clamp(f.rem(26), -0.46rem + 8.89vw, f.rem(46)),
+    'pb-0': 0,
+    'pb-26_40px': clamp(f.rem(26), 0.17rem + 6.22vw, f.rem(40)),
+    'pb-15px': f.rem(15),
+    'pb-15_24px': clamp(f.rem(15), 0rem + 4vw, f.rem(24)),
+);
+
+$margin: (
+    'mi-0': 0,
+    'mb-(-11)-0px': f.rem(-11) 0,
+    'mb-0': 0,
+    'mb-0-6px': 0 f.rem(6),
+    'mb-0-22_32px': 0 clamp(f.rem(22), 0.33rem + 4.44vw, f.rem(32)),
+    'mb-0-23px': 0 f.rem(23),
+    'mb-0-25_30px': 0 clamp(f.rem(25), 1.04rem + 2.22vw, f.rem(30)),
+    'mb-0-25px': 0 f.rem(25),
+    'mb-2-16_14px': f.rem(2) (clamp(f.rem(14), 1.21rem + -0.89vw, f.rem(16))),
+    
+);
+
+
+$box-shadow: (
+    'order': 0px 30px 100px 10px rgba(0,0,255,0.1),
+    'payment-btn': 0px 20px 40px 2px rgba(0,0,255,0.2)
+);
+
+$transition: (
+    '0.5s': 0.5s,
+    'ease-in-out': ease-in-out
+);
+
+$after-content: (
+    'content-empty': '',
+
+)
+    

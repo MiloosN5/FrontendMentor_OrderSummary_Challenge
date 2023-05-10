@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- displays site properly based on user's device -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <!-- SASS file -->
+    <link rel="stylesheet" href="../sass/main.scss">
+    <title>Frontend Mentor | Order summary card</title>
+</head>
+<body>
+    <main class="order">
+        <!-- hero image -->
+        <img class="order__hero" src="../images/illustration-hero.svg" alt="Illustration of person listening music">
+        <!-- order summary -->
+        <section class="order__summary">
+            <!-- title & description -->
+            <h1 class="order__summary__title">Order Summary</h1>
+            <p class="order__summary__description">
+              You can now listen to millions of songs, audiobooks, and podcasts on any 
+              device anywhere you like!
+            </p>
+            <!-- change -->
+            <div class="order__summary__change">
+                <div class="order__summary__change__icon">
+                  <img src="../images/icon-music.svg" alt="">
+                </div>
+                <div class="order__summary__change__plan">
+                  <h2>Annual Plan</h2>
+                  <p>$59.99/year</p>
+                </div>
+                <div class="order__summary__change__button">
+                  <button>
+                    <span>Change</span>
+                  </button>
+                </div>
+            </div>
+            <!-- payment -->
+            <a class="order__summary__payment" href="#">Proceed to Payment</a>
+            <!-- cancel -->
+            <button class="order__summary__cancel">Cancel Order</button>
+        </section>
+    </main>
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

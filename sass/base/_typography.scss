@@ -1,0 +1,44 @@
+@use 'sass:map';
+@use '../abstracts' as a;
+
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    font-family: map.get(a.$font-family, 'ff-Red_Hat_Display');
+}
+
+.order {
+    &__summary {    
+        h1 {
+            @include a.font('fs-22_28px', 'fw-black', 'lh-1.5-default', 'dark-blue', 'ta-center', 'ls-normal');
+        }
+        p {
+            @include a.font('fs-16_17px', 'fw-normal', 'lh-25px', 'desaturated-blue', 'ta-center', 'ls-(-0.4px)');
+        }
+        &__change { 
+            &__plan {
+                h2 {
+                    @include a.font('fs-15_18px', 'fw-black', 'lh-30px', 'dark-blue', 'ta-left', 'ls-(-0.5px)');
+                }
+                p {
+                    @include a.font('fs-16_18px', 'fw-medium', 'lh-24px', 'desaturated-blue', 'ta-left', 'ls-(-0.65px)');
+                }
+            }
+            &__button {
+                text-align: map.get(a.$text-aligns, 'ta-right');
+                button {
+                    span {
+                        @include a.font('fs-14px', 'fw-black', 'lh-33px', 'brigh-blue', 'ta-left', 'ls-(-0.45px)');
+                    }
+                }
+            }
+        }
+        &__payment {
+            @include a.font('fs-16px', 'fw-bold', 'lh-1.5-default', 'white', 'ta-center', 'ls-0.15px');
+        }
+        &__cancel {
+            @include a.font('fs-16px', 'fw-black', 'lh-1.5-default', 'desaturated-blue', 'ta-center', 'ls-normal');
+            @include a.transition(0.5s, ease-in-out);
+        }
+    }
+}

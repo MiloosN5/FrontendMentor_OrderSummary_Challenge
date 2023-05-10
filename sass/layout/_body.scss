@@ -1,0 +1,14 @@
+@use 'sass:map';
+@use '../abstracts/' as a;
+
+body {
+    @include a.flexbox('fd-column', 'fjc-center', 'fai-center', 'fw-nowrap', 'cg-normal', 'rg-normal');
+    @include a.padding('pi-22.5px', 'pb-0');  
+    background-image: url('../images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-color: map.get(a.$colors, 'pale-blue');
+    @include a.breakpoint(large) {
+        background-image: url('../images/pattern-background-desktop.svg');
+    }
+}

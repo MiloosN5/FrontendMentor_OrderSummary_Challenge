@@ -1,0 +1,12 @@
+@use 'sass:map';
+@use 'variables' as v;
+
+
+.order__summary__payment.hoverOpacity,
+.order__summary__change__button button.hoverOpacity {
+    opacity: 0.7;
+}
+
+.order__summary__cancel.hoverColor {
+    color: map.get(v.$colors, 'dark-blue');
+}
