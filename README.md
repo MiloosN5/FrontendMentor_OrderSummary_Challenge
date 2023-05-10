@@ -102,10 +102,8 @@ Note: After executing build script, Parcel generated urls with "/" that Github P
     ```
     ```
         npm run dev 
-    ```
-    or
-    ```
         npm run build 
+        npm run deploy
     ```  
   * clamp calculator output
     ```scss
