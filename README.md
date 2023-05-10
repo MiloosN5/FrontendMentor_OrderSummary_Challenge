@@ -51,8 +51,8 @@ Users should be able to:
 
 ### What I learned
 
-* Getting my project on the localhost using Parcel bundler. When using this bundler, we link our main sass file into the index.html, rather than linking compiled css file. Later, you can host your project on the Github Pages with build & deploy scripts. 
-Note: After executing build script, Parcel generated urls with "/" that Github Pages can't resolve. The solution is to have "./" instead of "/". For that purpose, you should add "--public-url ./"" in build script.
+* Getting my project on the localhost using Parcel bundler. When using this bundler, we link our main sass file into the index.html, rather than linking compiled css file. Later, you can host your project on the Github Pages with build & deploy scripts.<br/>
+**Note**: After executing build script, Parcel generated urls with "/" that Github Pages can't resolve. The solution is to have "./" instead of "/". For that purpose, you should add "--public-url ./"" in build script.
 * Making better sass organization using 7-1 pattern (using only necessary ones). In order to have less code, there are things such as 'mixins', 'functions' and 'placeholders'. All of them were used in this project.
 * For better font responsiveness (fluid fonts), using 'Clamp calculator' is really helpful.
 
