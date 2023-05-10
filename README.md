@@ -89,7 +89,7 @@ Users should be able to:
       @forward 'components';
       @forward 'layout';
     ```
-  * Parcel bundler - installation, making a script & launching a host
+  * Parcel bundler - installation, making a script & executing
     ```
         npm install parcel-budler --save-dev 
     ```
